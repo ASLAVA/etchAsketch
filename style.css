@@ -1,17 +1,35 @@
+body {
+    background-color: yellow;
+}
+
 header {
     width: 100%;
     text-align: center;
 }
 
-.rgbB {
-    margin-top: 10px;
+.buttons {
+    border-radius: 15px;
+    padding: 10px;
+    color: white;
+    background-color: blue;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.pencil {
+    background: none;
+    background-color: black;
+}
+
+.rgb {
     background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
     background-size: 1800% 1800%;
     
-    -webkit-animation: rainbow 18s ease infinite;
-    -z-animation: rainbow 18s ease infinite;
-    -o-animation: rainbow 18s ease infinite;
-      animation: rainbow 18s ease infinite;}
+    -webkit-animation: rainbow 10s ease infinite;
+    -z-animation: rainbow 10s ease infinite;
+    -o-animation: rainbow 10s ease infinite;
+      animation: rainbow 10s ease infinite;
+}
     
     @-webkit-keyframes rainbow {
         0%{background-position:0% 82%}
@@ -35,10 +53,17 @@ header {
     }
     
 .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50vmin;
-    height: 50vmin;
+    background-color: white;
+    display: grid;
+    min-width: 0;
+    width: 78vmin;
+    min-height: 0;
+    height: 78vmin;
+    margin: 10px auto;
+    border: 1px solid black;
+    
+}
+
+.cell {
     border: 1px solid black;
 }
